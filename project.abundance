@@ -216,6 +216,36 @@
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.7524950099800399,
+            "y": 0.14525139664804468,
+            "uniqueID": "c4dac679-275e-46ac-8931-73ea2a86e46e",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "025265ec-1c49-4059-b48a-4c9e85b4e68c"
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Pocket-Gcode-Test"
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "STL"
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": "STL",
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "Pocket-Gcode-Test"
         }
     ],
     "allConnectors": [
@@ -267,6 +297,13 @@
             "ap2Primary": false,
             "ap1ID": "025265ec-1c49-4059-b48a-4c9e85b4e68c",
             "ap2ID": "bb1d7ac8-95c3-4fc6-a32f-55f88315d791"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": "025265ec-1c49-4059-b48a-4c9e85b4e68c",
+            "ap2ID": "c4dac679-275e-46ac-8931-73ea2a86e46e"
         },
         {
             "ap1Name": "Gcode",
